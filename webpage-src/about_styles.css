@@ -1,6 +1,12 @@
 /* About Us Page  */
 
 /* Header Section */
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
 .navbar {
     background: #d9d5e9;
     height: 80px;
