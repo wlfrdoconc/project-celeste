@@ -4,6 +4,17 @@
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
 }
+
+body, h1, h2 {
+    font-family: "VT323", serif;
+    color: #d9d5e9;
+}
+
+body {
+    background-image: url("homepage_bg.png");
+    height: 4147px;
+}
+
  /* Header Section */
 .navbar {
     background: #d9d5e9;
@@ -30,7 +41,8 @@
 
 #navbar__logo {
     background-color: #050221;
-    background-image: linear-gradient(to top, #050221 0%, #050221 100%);
+    font-family: "VT323", serif;
+    /*background-image: linear-gradient(to top, #050221 0%, #050221 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -49,6 +61,7 @@
 
 .navbar__menu {
     display: flex;
+    font-family: "VT323", serif;
     align-items: center;
     list-style: none;
     text-align: center;
@@ -60,6 +73,7 @@
 
 .navbar__links {
     color: #050221;
+    font-family: "VT323", serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +93,7 @@
 /*This decorates the signup bar*/
 .button {
     display: flex;
+    font-family: "VT323", serif;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -224,7 +239,7 @@
     /* height: 100%; /* Ensure it takes up full container height */
     margin: 0 auto;
     height: 90vh;
-    background-color: #080424;
+    background-color: transparent;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -233,8 +248,8 @@
 
 .main__content h1 {
     font-size: 4rem;
-    background-color: #ffff;
-    background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);
+    /*background-color: #ffff;
+    /*background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -243,10 +258,10 @@
 }
 
 .main__content h2 {
-    font-size: 4rem;
-    background-color: #ffff;
-    background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);
-    background-size: 100%;
+    font-size: 30 px;
+    background-color: #d9d5e9;
+    /*background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);*/
+    /*background-size: 100%;*/
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -255,7 +270,7 @@
 
 /* Events Section Content */
 .events {
-    background: #080424;
+    /*background: #080424;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,10 +278,11 @@
 }
 
 .events h1 {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
+    background-color: #d9d5e9;
+    font-family: "VT323", serif;
+    /*background-image: linear-gradient(to right, #ffff 0%, 
     #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
+    );*/
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -279,7 +295,7 @@
 /* Uncover Section Content */
 
 .uncover {
-    background: #080424;
+    /*background: #080424;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,10 +303,10 @@
 }
 
 .uncover h1 {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
+    background-color: #d9d5e9;
+    /*background-image: linear-gradient(to right, #ffff 0%, 
     #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
+    );*/
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -301,13 +317,13 @@
 }
 
 .uncover h2 {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
+    background-color: #d9d5e9;
+    /*background-image: linear-gradient(to right, #ffff 0%, 
     #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
+    );*/
     background-size: 100%;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
+    font-size: 25pt;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -315,17 +331,18 @@
 }
 
 .uncover p {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
+    background-color: #d9d5e9;
+    /*background-image: linear-gradient(to right, #ffff 0%, 
     #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
+    );*/
     background-size: 100%;
     margin-bottom: 5rem;
-    font-size: 2.5rem;
+    font-size: 15pt;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    font-family: "VT323", serif;
 }
 
 
@@ -350,7 +367,7 @@
     /* height: 100%; /* Ensure it takes up full container height */
     margin: 0 auto;
     height: 90vh;
-    background-color: #080424;
+    /*background-color: #080424;*/
     z-index: 1;
     width: 100%;
     max-width: 1300px;
