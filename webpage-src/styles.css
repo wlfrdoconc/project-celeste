@@ -253,7 +253,81 @@
     -moz-text-fill-color: transparent;
 }
 
-/* Events Content */
+/* Events Section Content */
+.events {
+    background: #080424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.events h1 {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* Uncover Section Content */
+
+.uncover {
+    background: #080424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.uncover h1 {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.uncover h2 {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.uncover p {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
 
 /* Transparent Box */
 
@@ -265,4 +339,60 @@
     margin-top: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center-aligns text */
+    /* height: 100%; /* Ensure it takes up full container height */
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #080424;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+/* About Us Page  */
+
+.about__content {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center-aligns text */
+    /* height: 100%; /* Ensure it takes up full container height */
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #080424;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.about__content h1 {
+    font-size: 4rem;
+    background-color: #ffff;
+    background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about__content p {
+    font-size: 4rem;
+    background-color: #ffff;
+    background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
