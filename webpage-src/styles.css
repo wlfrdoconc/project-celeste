@@ -350,12 +350,14 @@ body {
 
 .transparent-box {
     background-color: rgba(255, 255, 255, 0.5); /* White background with 50% transparency */
-    border: 1px solid #ddd; /* Optional: Add a border to make it stand out */
+    border: 2px solid #635c85; /* Optional: Add a border to make it stand out */
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+    width: 1028px;
+    height: 541px;
 }
 
 .main__content {
