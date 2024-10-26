@@ -201,11 +201,27 @@
 
 /* Hero Section */
 
-.main__container {
+/* .main__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #080424;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+} */
+
+.main__content {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center-aligns text */
+    /* height: 100%; /* Ensure it takes up full container height */
     margin: 0 auto;
     height: 90vh;
     background-color: #080424;
