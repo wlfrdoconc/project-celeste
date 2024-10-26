@@ -303,3 +303,55 @@
         align-items: center;
     }
 }
+
+/* Separate Uncover Page Section */
+
+.uncoverpage {
+    background: #080424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.uncoverpage h1 {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.uncoverpage h2 {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.uncoverpage p {
+    background-color: #ffff;
+    background-image: linear-gradient(to right, #ffff 0%, 
+    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
