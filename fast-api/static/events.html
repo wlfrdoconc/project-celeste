@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Space Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .event { margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; }
+        .event h2 { margin: 0; font-size: 1.5em; }
+        .event p { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Space Events</h1>
+    <div id="events-container">
+        <!-- Events will be dynamically inserted here -->
+    </div>
+
+    <script>
+        async function fetchEvents() {
+            try {
+                const response = await fetch('/events');
+                const events = await response.json();
+                
+                const container = document.getElementById('events-container');
+                container.innerHTML = ''; // Clear existing content
+
+                events.forEach(event => {
+                    const eventDiv = document.createElement('div');
+                    eventDiv.className = 'event';
+                    
+                    const title = document.createElement('h2');
+                    title.textContent = event.title;
+                    eventDiv.appendChild(title);
+
+                    const date = document.createElement('p');
+                    date.textContent = `Date: ${event.date}`;
+                    eventDiv.appendChild(date);
+
+                    const description = document.createElement('p');
+                    description.textContent = event.description;
+                    eventDiv.appendChild(description);
+
+                    container.appendChild(eventDiv);
+                });
+            } catch (error) {
+                console.error('Error fetching events:', error);
+            }
+        }
+
+        // Fetch events on page load
+        window.onload = fetchEvents;
+    </script>
+</body>
+</html>
