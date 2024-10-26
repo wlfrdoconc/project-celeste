@@ -5,63 +5,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Celeste Website</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="uncover_styles.css" />
   </head>
   <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo">CELESTE</a>
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="navbar__container">
+          <a href="/" id="navbar__logo">CELESTE</a>
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/tech.html" class="navbar__links">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="/" class="navbar__links">Uncover</a>
+            </li>
+            <li class="navbar__btn">
+              <a href="/" class="button">Events</a>
+            </li>
+          </ul>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Home</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/tech.html" class="navbar__links">About</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">Uncover</a>
-          </li>
-          <li class="navbar__btn">
-            <a href="/" class="button">Events</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
 
     <!-- Uncover Page Hero Section -->
     <!--Use the uncover, uncover__container, and uncover__con-->
     <div class="uncoverpage">
       <div class="uncover__container">
-        <div class="uncover__content">
+        <div class="uncover__content"> 
+          <br><br><br><br><br><br><br><br>
           <h1>Comet</h1>
-          <h2>Summary</h2>
+          <img src="assets/comet.png" alt="/" class="center">
+          <br><br><br><br>
+          <h2>
+            Comets are chunks of rocks and ice that orbit the sun. That's right, comets are extremely COLD, not hot! 
+            It's comprised of the nucelus (the solid, central part of the comet) and 2 trails (gas trail and dust trail).
+            Fun fact, scientists found amino acids in samples taken from a comet, which are the building blocks of life!
+            This suggests that comets helped bring life to Earth. </h2>
+          <br>
           <p>Learn More:</p>
-          <p>* Link 1</p>
-          <p>* Link 2</p>
-          <p>* Link 3</p>
+          <p>* <a href="https://science.nasa.gov/solar-system/comets/">NASA</a></p>
+          <p>* <a href="https://www.space.com/comets.html">Space.com</a></p>
         </div>
-        <!--Reusing Image Placeholder from Team Members Page-->
-        <!--Rename it to image placeholder for uncover later-->
-        <div class="team__member" data-aos="fade-up" data-aos-delay="100">
-            <div class="team__img">
-              <img src="assets/img/team/wilfredotest.JPG" alt="/" />
-              <div class="social">
-                <a href="https://linkedin.com/in/wlfrdoconc"
-                  ><i class="icofont-linkedin"></i
-                ></a>
-              </div>
-            </div>
-            <div class="team__info">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
