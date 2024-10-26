@@ -198,3 +198,44 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+/* Hero Section */
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #080424;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #ffff;
+    background-image: linear-gradient(to top, #ffff 0%, #ffff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+/* Events Content */
+
+/* Transparent Box */
+
+.transparent-box {
+    background-color: rgba(255, 255, 255, 0.5); /* White background with 50% transparency */
+    border: 1px solid #ddd; /* Optional: Add a border to make it stand out */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
+}
