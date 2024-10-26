@@ -4,8 +4,8 @@ body, h1, h2 {
 }
 
 body {
-    background-image: url("homepage_bg.png");
-    height: 4147px;
+    background-image: url("assets/homepage_bg.png");
+    height: 3500px;
 }
 
  /* Header Section */
