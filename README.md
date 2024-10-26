@@ -1,2 +1,2 @@
-# team-accelerate-project
+# Celeste
 Team Accelerate's project
