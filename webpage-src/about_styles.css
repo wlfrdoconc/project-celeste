@@ -1,4 +1,6 @@
- /* Header Section */
+/* About Us Page  */
+
+/* Header Section */
 .navbar {
     background: #d9d5e9;
     height: 80px;
@@ -8,7 +10,7 @@
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 999;
 }
 
 .navbar__container {
@@ -24,7 +26,8 @@
 
 #navbar__logo {
     background-color: #050221;
-    background-image: linear-gradient(to top, #050221 0%, #050221 100%);
+    font-family: "VT323", serif;
+    /*background-image: linear-gradient(to top, #050221 0%, #050221 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -43,6 +46,7 @@
 
 .navbar__menu {
     display: flex;
+    font-family: "VT323", serif;
     align-items: center;
     list-style: none;
     text-align: center;
@@ -54,6 +58,7 @@
 
 .navbar__links {
     color: #050221;
+    font-family: "VT323", serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,6 +78,7 @@
 /*This decorates the signup bar*/
 .button {
     display: flex;
+    font-family: "VT323", serif;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -193,12 +199,18 @@
     }
 }
 
-/* About Us Page  */
-
 /* About Us Section */
+body {
+    background-image: url("about_us_bg.png");
+    font-family: "VT323", serif;
+    color: #d9d5e9;
+}
+
 .about {
-    background-color: #080424; /* Background color for the entire section */
-    color: #ffffff; /* Text color for readability */
+    font-size: 18pt;
+    /*background-color: #080424; /* Background color for the entire section */
+    font-family: "VT323", serif;
+    color: #d9d5e9;; /* Text color for readability */
     width: 100%;
     height: 100vh; /* Full viewport height */
     display: flex;
@@ -210,15 +222,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     max-width: 800px; /* Adjust width for readability */
     padding: 20px;
+}
+
+h1.about__content{
+    text-align: center;
+}
+
+p.about__content{
+    text-align: left;
 }
 
 /* About Us Team Section */
 
 .team {
     background-color: #080424; /* Background color for the entire section */
+    font-family: "VT323", serif;
     color: #ffffff; /* Text color for readability */
     width: 100%;
     height: 100vh; /* Full viewport height */
@@ -250,10 +270,12 @@
     justify-content: center;
     gap: 30px;
     padding-top: 20px;
+    color: #d9d5e9;
 }
 
 .team__member {
     background-color: #1a1a2e;
+    font-family: "VT323", serif;
     border-radius: 10px;
     padding: 20px;
     width: 250px;
@@ -262,8 +284,8 @@
 }
 
 .team__img {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 10px;
@@ -278,12 +300,12 @@
 .team__info h4 {
     font-size: 1.5rem;
     margin: 10px 0 5px;
-    color: #ffffff;
+    color: #d9d5e9;
 }
 
 .team__info span {
     font-size: 0.9rem;
-    color: #c1c1c1;
+    color: #ffffff;
 }
 
 .social a {
@@ -302,56 +324,4 @@
         flex-direction: column;
         align-items: center;
     }
-}
-
-/* Separate Uncover Page Section */
-
-.uncoverpage {
-    background: #080424;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.uncoverpage h1 {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
-    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.uncoverpage h2 {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
-    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.uncoverpage p {
-    background-color: #ffff;
-    background-image: linear-gradient(to right, #ffff 0%, 
-    #ffff 0%, #ffff 21%, #ffff 52%, #ffff 78%, #ffff 100%
-    );
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
 }
