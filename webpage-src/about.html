@@ -1,333 +1,134 @@
-/* About Us Page  */
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Header Section -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Celeste Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="about_styles.css" />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">CELESTE</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tech.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Uncover</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button">Events</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-/* Header Section */
-* {
-    box-sizing: border-box;
-    margin: 0; 
-    padding: 0;
-}
+    <!-- About Us Hero Section -->
+    <div class="about">
+      <div class="about__container">
+        <div class="about__content">
+          <h1>About Us</h1> <br>
+          <p>
+            This is a student-run, nonprofit website that aims to make learning
+            about space accessible.
+          </p> <br>
+          <p>
+            Too often, people who don't know about the occurrences of
+            astronomical events until it has already passed. We strive to
+            educate more people and encourage them to view these beautiful
+            phenomenons, providing a simple yet effective list of upcoming
+            events that you can add to your calendar with a simple click.
+          </p> <br>
+          <p>
+            Additionally, information surrounding space are often lengthy and
+            convoluted, deterring people from reading and learning about
+            everything space has to offer. We provide concise summaries of
+            various celestial bodies... basically this is space for dummies!
+          </p> <br> <br> <br> <br> <br> <br>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
 
-.navbar {
-    background: #d9d5e9;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
+<!--About Us Team Members Section -->
+<section id="team" class="team section-bg">
+  <div class="about__container">
+    <div class="about__content"></div>
 
-.navbar__container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
-}
+    <div class="team__row">
+      <!-- Team Member 1 -->
+      <div class="team__member" data-aos="fade-up" data-aos-delay="100">
+        <div class="team__img">
+          <img src="assets/icon_wilfredo.png" alt="Wilfredo"/>
+          <div class="social">
+            <a href="https://linkedin.com/in/wlfrdoconc"
+              ><i class="icofont-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="team__info">
+          <h4>Wilfredo Concepcion</h4>
+          <span>Front End Developer and Project Manager</span>
+        </div>
+      </div>
 
-#navbar__logo {
-    background-color: #050221;
-    font-family: "VT323", serif;
-    /*background-image: linear-gradient(to top, #050221 0%, #050221 100%);*/
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
+      <!-- Team Member 2 -->
+      <div class="team__member" data-aos="fade-up" data-aos-delay="100">
+        <div class="team__img">
+          <img src="assets/icon_jasmine.png" alt="Jasmine Tu" />
+          <div class="social">
+            <a href="https://linkedin.com/in/wlfrdoconc"
+              ><i class="icofont-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="team__info">
+          <h4>Jasmine Tu</h4>
+          <span>Front End Developer and Designer</span>
+        </div>
+      </div>
 
-.fa-gem {
-    margin-right: 0.5rem;
-}
+      <!-- Team Member 3 -->
+      <div class="team__member" data-aos="fade-up" data-aos-delay="200">
+        <div class="team__img">
+          <img src="assets/icon_minh.png" alt="Minh Trinh" />
+          <div class="social">
+            <a href="https://linkedin.com/wlfrdoconc/"
+              ><i class="icofont-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="team__info">
+          <h4>Minh Trinh</h4>
+          <span>Back End Developer</span>
+        </div>
+      </div>
 
-.navbar__menu {
-    display: flex;
-    font-family: "VT323", serif;
-    align-items: center;
-    list-style: none;
-    text-align: center;
-}
-
-.navbar__item {
-    height: 80px;
-}
-
-.navbar__links {
-    color: #050221;
-    font-family: "VT323", serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-}
-
-.navbar__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-    width: 100%;
-}
-
-/*This decorates the signup bar*/
-.button {
-    display: flex;
-    font-family: "VT323", serif;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #050221;
-    color: #d9d5e9;
-}
-
-.button:hover {
-    background: #7054c4;
-    transition: all 0.3s ease;
-}
-
-/*This changes the color of the navbar links when we hover over it */
-.navbar__links:hover {
-    color: #7054c4;
-    transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 960px) {
-    .navbar__container {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        z-index: 1;
-        width: 100%;
-        max-width: 1300px;
-        padding: 0;
-    }
-
-    .navbar__menu {
-        display: grid;
-        grid-template-columns: auto;
-        margin: 0;
-        width: 100%;
-        position: absolute;
-        top: -1000px;
-        opacity: 0;
-        transition: all 0.5s ease;
-        height: 50vh;
-        z-index: -1;
-        background: #131313;
-    }
-
-    .navbar__menu.active {
-        background: #131313;
-        top: 100%;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 99;
-        height: 50vh;
-        font-size: 1.6rem;
-    }
-
-    #navbar__logo {
-        padding-left: 25px;
-    }
-
-    .navbar__toggle .bar{
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #fff;
-    }
-
-    .navbar__item {
-        width: 100%;
-    }
-
-    .navbar__links {
-        text-align: center;
-        padding: 2rem;
-        width: 100%;
-        display: table;
-    }
-
-    #mobile-menu {
-        position: absolute;
-        top: 20%;
-        right: 5%;
-        transform: translate(5%, 20%);
-    }
-
-    .navbar__btn {
-        padding-bottom: 2rem;
-    }
-
-    .button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        height: 80px;
-        margin: 0;
-    }
-
-    .navbar__toggle .bar {
-        display: block;
-        cursor: pointer;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    #mobile-menu.is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    #mobile-menu.is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-}
-
-/* About Us Section */
-body {
-    background-image: url("assets/about_us_bg.png");
-    font-family: "VT323", serif;
-    color: #d9d5e9;
-}
-
-.about {
-    font-size: 18pt;
-    /*background-color: #080424; /* Background color for the entire section */
-    font-family: "VT323", serif;
-    color: #d9d5e9;; /* Text color for readability */
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px; /* Adjust width for readability */
-    padding: 20px;
-}
-
-h1.about__content{
-    text-align: center;
-}
-
-p.about__content{
-    text-align: left;
-}
-
-/* About Us Team Section */
-
-.team {
-    background-color: #080424; /* Background color for the entire section */
-    font-family: "VT323", serif;
-    color: #ffffff; /* Text color for readability */
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.team__row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 800px; /* Adjust width for readability */
-    padding: 20px;
-}
-
-/*.team__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 20px;
-}*/
-
-.team__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 20px;
-    color: #d9d5e9;
-}
-
-.team__member {
-    background-color: #1a1a2e;
-    font-family: "VT323", serif;
-    border-radius: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.team__img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 10px;
-}
-
-.team__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.team__info h4 {
-    font-size: 1.5rem;
-    margin: 10px 0 5px;
-    color: #d9d5e9;
-}
-
-.team__info span {
-    font-size: 0.9rem;
-    color: #ffffff;
-}
-
-.social a {
-    color: #ffffff;
-    font-size: 20px;
-    margin: 0 5px;
-}
-
-.social a:hover {
-    color: #7054c4;
-}
-
-/* Adjusts the about us section be adjustable to mobile devices */
-@media (max-width: 768px) {
-    .team__row {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+      <!-- Team Member 4 -->
+      <div class="team__member" data-aos="fade-up" data-aos-delay="300">
+        <div class="team__img">
+          <img src="assets/icon_lordin.png" alt="Lordin Yi" />
+          <div class="social">
+            <a href="/"><i class="icofont-globe"></i></a>
+          </div>
+        </div>
+        <div class="team__info">
+          <h4>Lordin Yi</h4>
+          <span>Back End Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
